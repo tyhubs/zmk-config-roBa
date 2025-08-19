@@ -83,7 +83,7 @@
 &kp Q             &kp W         &kp E         &kp R           &kp T                                                                   &kp Y     &kp U    &lt 5 I    &kp O    &kp P
 &kp A             &kp S         &kp D         &kp F           &kp G                   &kp ESCAPE                     &kp MINUS        &kp H     &kp J    &kp K      &kp L    &kp SQT
 &mt LEFT_SHIFT Z  &kp X         &kp C         &kp V           &kp B                   &kp LEFT_SHIFT                 &lt 2 BACKSPACE  &lt 1 N   &lt 4 M  &kp COMMA  &kp DOT  &kp SLASH
-&kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &mt DELETE TAB  &mt INT_MUHENKAN SPACE  &mt LANGUAGE_2 LANGUAGE_1      &kp BACKSPACE    &mkp MB1                               &mkp MB1
+&kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &mt DELETE TAB  &mt INT_MUHENKAN SPACE  &mt LANGUAGE_2 LANGUAGE_1      &kp ENTER        &mkp MB1                               &mkp MB1
             >;
 
             sensor-bindings = <&inc_dec_kp PAGE_UP PAGE_DOWN>;
