@@ -92,7 +92,7 @@
         FUNCTION {
             bindings = <
 &trans  &trans  &trans  &trans  &trans                       &kp PAGE_UP    &kp LC(LS(TAB))     &kp LG(UP_ARROW)    &kp LC(TAB)          &kp ESCAPE
-&trans  &trans  &trans  &trans  &trans  &trans      &kp F13  &kp PAGE_DOWN  &kp LG(LEFT_ARROW)  &kp LG(D)           &kp LG(RIGHT_ARROW)  &kp F10
+&trans  &trans  &trans  &trans  &trans  &trans      &kp F13  &kp PAGE_DOWN  &kp LG(LEFT_ARROW)  &kp LG(D)           &kp LG(RIGHT_ARROW)  &kp LC(W)
 &trans  &trans  &trans  &trans  &trans  &trans      &trans   &trans         &kp C_AC_BACK       &kp LG(DOWN_ARROW)  &kp LA(UP_ARROW)     &kp F11
 &trans  &trans  &trans  &trans  &trans  &trans      &trans   &trans                                                                      &kp F12
             >;
