@@ -86,7 +86,7 @@
 &kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &mt DELETE TAB  &mt INT_MUHENKAN SPACE  &mt LANGUAGE_2 LANG_HIRAGANA      &kp BACKSPACE    &mkp MB1                               &mkp MB1
             >;
 
-            sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
+            sensor-bindings = <&inc_dec_kp K_SCROLL_UP K_SCROLL_DOWN>;
         };
 
         FUNCTION {
