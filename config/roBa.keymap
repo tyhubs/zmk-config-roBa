@@ -40,8 +40,8 @@
         };
 
         muhennkann {
-            bindings = <&to_layer_0 INT_MUHENKAN>;
-            key-positions = <11 10>;
+            bindings = <&kp ESCAPE>;
+            key-positions = <18 19 20>;
         };
 
         double_quotation {
