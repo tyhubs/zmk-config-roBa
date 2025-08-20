@@ -36,7 +36,7 @@
 
         shift_tab {
             bindings = <&mkp MB2>;
-            key-positions = <18 19 20>;
+            key-positions = <19 20>;
         };
 
         muhennkann {
