@@ -2,8 +2,6 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 
-
-
 &mt {
     flavor = "balanced";
     quick-tap-ms = <0>;
@@ -74,8 +72,6 @@
             #binding-cells = <2>;
             tapping-term-ms = <200>;
         };
-
-
     };
 
     keymap {
@@ -85,11 +81,11 @@
             bindings = <
 &kp Q             &kp W         &kp E         &kp R                        &kp T                                                          &kp Y        &kp U  &lt 5 I    &kp O    &kp P
 &kp A             &kp S         &kp D         &kp F                        &kp G        &kp LS(LG(S))                      &kp MINUS      &kp H        &kp J  &kp K      &kp L    &kp SQT
-&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V                        &kp B        &kp COLON                          &kp SEMICOLON  &lt 3 B      &kp M  &kp COMMA  &kp DOT  &kp SLASH
+&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V                        &kp B        &kp A                              &kp SEMICOLON  &lt 3 B      &kp M  &kp COMMA  &kp DOT  &kp SLASH
 &kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 6 INT_HENKAN  &lt 2 SPACE  &lt_to_layer_0 3 INT_MUHENKAN      &kp BACKSPACE  &lt 1 ENTER                             &kp DEL
             >;
 
-         
+            sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
         };
 
         FUNCTION {
