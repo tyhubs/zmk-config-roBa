@@ -72,7 +72,7 @@
             bindings = <
 &kp Q             &kp W         &kp E         &kp R           &kp T                                                                   &kp Y     &kp U    &lt 5 I    &kp O    &kp P
 &kp A             &kp S         &kp D         &kp F           &kp G                   &kp ESCAPE                     &kp MINUS        &kp H     &kp J    &kp K      &kp L    &kp SQT
-&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V           &kp B                   &kp LEFT_SHIFT                 &lt 2 BACKSPACE  &kp N     &lt 4 M  &kp COMMA  &kp DOT  &kp SLASH
+&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V           &kp B                   &kp LEFT_SHIFT                 &lt 1 BACKSPACE  &kp N     &lt 4 M  &kp COMMA  &kp DOT  &kp SLASH
 &kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &mt DELETE TAB  &mt INT_MUHENKAN SPACE  &mt LANGUAGE_2 LANGUAGE_1      &lt 1 ENTER      &mkp MB1                               &mkp MB1
             >;
 
@@ -81,10 +81,10 @@
 
         FUNCTION {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                       &kp K_SCROLL_UP    &kp LC(LS(TAB))     &kp LG(UP_ARROW)    &kp LC(TAB)          &kp LC(W)
-&trans  &trans  &trans  &trans  &trans  &trans      &kp F13  &kp K_SCROLL_DOWN  &kp LG(LEFT_ARROW)  &kp LG(D)           &kp LG(RIGHT_ARROW)  &kp F5
-&trans  &trans  &trans  &trans  &trans  &trans      &trans   &kp ESCAPE         &kp LEFT_ARROW      &kp LG(DOWN_ARROW)  &kp RIGHT_ARROW      &kp SPACE
-&trans  &trans  &trans  &trans  &trans  &trans      &trans   &trans                                                                          &kp F12
+&trans  &trans  &trans  &trans  &trans                       &kp K_SCROLL_UP       &kp LC(LS(TAB))     &kp LG(UP_ARROW)    &kp LC(TAB)          &kp LC(W)
+&trans  &trans  &trans  &trans  &trans  &trans      &kp F13  &kp C_AC_SCROLL_DOWN  &kp LG(LEFT_ARROW)  &kp LG(D)           &kp LG(RIGHT_ARROW)  &kp F5
+&trans  &trans  &trans  &trans  &trans  &trans      &trans   &kp ESCAPE            &kp LEFT_ARROW      &kp LG(DOWN_ARROW)  &kp RIGHT_ARROW      &kp SPACE
+&trans  &trans  &trans  &trans  &trans  &trans      &trans   &trans                                                                             &kp F12
             >;
         };
 
