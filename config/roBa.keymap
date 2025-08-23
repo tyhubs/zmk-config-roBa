@@ -65,6 +65,11 @@
             bindings = <&kp LC(N0)>;
             key-positions = <18 19 20 21>;
         };
+
+        jfdsa {
+            bindings = <&kp LS(LG(S))>;
+            key-positions = <10 11 12 13>;
+        };
     };
 
     macros {
