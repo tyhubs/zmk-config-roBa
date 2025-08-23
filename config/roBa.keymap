@@ -85,6 +85,7 @@
 &mt LEFT_SHIFT Z  &kp X         &kp C         &kp V  &kp B        &kp B              &kp B  &trans       &trans  &trans   &trans  &kp SLASH
 &kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &kp A  &lt 2 SPACE  &kp B              &kp A  &lt 1 ENTER                           &kp DEL
             >;
+                    sensor-bindings = <&encoder_msc_down_up>;
         };
 
         FUNCTION {
