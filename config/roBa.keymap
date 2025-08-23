@@ -75,7 +75,7 @@
             tapping-term-ms = <200>;
         };
 
-         encoder_msc_down_up: encoder_msc_down_up {
+        encoder_msc_down_up: encoder_msc_down_up {
             compatible = "zmk,behavior-sensor-rotate";
             label = "ENCODER_MSC_DOWN_UP";
             #sensor-binding-cells = <0>;
