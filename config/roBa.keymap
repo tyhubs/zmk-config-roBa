@@ -50,6 +50,21 @@
             bindings = <&msc MOVE_Y(5)>;
             key-positions = <30 31 32>;
         };
+
+        wrty {
+            bindings = <&kp HOME>;
+            key-positions = <6 7 8 9>;
+        };
+
+        q3qr {
+            bindings = <&kp END>;
+            key-positions = <30 31 32 33>;
+        };
+
+        wt {
+            bindings = <&kp LC(N0)>;
+            key-positions = <18 19 20 21>;
+        };
     };
 
     macros {
