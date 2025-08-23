@@ -81,10 +81,10 @@
 
         FUNCTION {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                       &kp PAGE_UP    &kp LC(LS(TAB))     &kp LG(UP_ARROW)    &kp LC(TAB)          &kp LC(W)
-&trans  &trans  &trans  &trans  &trans  &trans      &kp F13  &kp PAGE_DOWN  &kp LG(LEFT_ARROW)  &kp LG(D)           &kp LG(RIGHT_ARROW)  &kp F5
-&trans  &trans  &trans  &trans  &trans  &trans      &trans   &kp ESCAPE     &kp LEFT_ARROW      &kp LG(DOWN_ARROW)  &kp RIGHT_ARROW      &kp SPACE
-&trans  &trans  &trans  &trans  &trans  &trans      &trans   &trans                                                                      &kp F12
+&trans  &trans  &trans  &trans  &trans                       &kp K_SCROLL_UP    &kp LC(LS(TAB))     &kp LG(UP_ARROW)    &kp LC(TAB)          &kp LC(W)
+&trans  &trans  &trans  &trans  &trans  &trans      &kp F13  &kp K_SCROLL_DOWN  &kp LG(LEFT_ARROW)  &kp LG(D)           &kp LG(RIGHT_ARROW)  &kp F5
+&trans  &trans  &trans  &trans  &trans  &trans      &trans   &kp ESCAPE         &kp LEFT_ARROW      &kp LG(DOWN_ARROW)  &kp RIGHT_ARROW      &kp SPACE
+&trans  &trans  &trans  &trans  &trans  &trans      &trans   &trans                                                                          &kp F12
             >;
         };
 
