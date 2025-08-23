@@ -85,6 +85,10 @@ behaviors {};
 macros {};
 
 behaviors {};
+
+macros {};
+
+behaviors {};
 keymap {
         compatible = "zmk,keymap";
 
@@ -93,7 +97,7 @@ keymap {
 &kp Q             &kp W         &kp E         &kp R      &kp T                                                                   &kp Y     &kp U    &lt 5 I    &kp O    &kp P
 &kp A             &kp S         &kp D         &kp F      &kp G                   &kp ESCAPE                     &kp DELETE       &kp H     &kp J    &kp K      &kp L    &kp MINUS
 &mt LEFT_SHIFT Z  &kp X         &kp C         &kp V      &kp B                   &kp LEFT_SHIFT                 &lt 1 BACKSPACE  &kp N     &lt 4 M  &kp COMMA  &kp DOT  &kp SLASH
-&kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &mt A TAB  &mt INT_MUHENKAN SPACE  &mt LANGUAGE_2 LANGUAGE_1      &lt 1 ENTER      &mkp MB1                               &kp MINUS
+&kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &mt A TAB  &mt INT_MUHENKAN SPACE  &mt LANGUAGE_2 LANGUAGE_1      &lt 1 ENTER      &mkp MB1                               &kp QUESTION
 >;
 
             sensor-bindings = <&inc_dec_kp K_SCROLL_UP PAGE_DOWN>;
@@ -130,9 +134,9 @@ keymap {
 
         MOUSE {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans    &trans    &trans    &trans      &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans    &mkp MB1  &mkp MB3  &bl BL_OFF  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans    &trans    &trans    &trans      &trans
+&trans  &trans  &trans  &trans  &trans                      &trans    &trans      &trans  &trans      &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans    &caps_word  &trans  &bl BL_OFF  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans    &trans      &trans  &trans      &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &mkp MB2                                  &trans
 >;
         };
