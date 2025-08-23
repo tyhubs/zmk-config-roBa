@@ -103,10 +103,10 @@
 
         FUNCTION {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                       &kp F1  &kp LS(LC(TAB))     &kp LG(UP_ARROW)    &kp LC(TAB)          &kp F5
-&trans  &trans  &trans  &trans  &trans  &trans      &kp F13  &kp F6  &kp LG(LEFT_ARROW)  &kp LG(D)           &kp LG(RIGHT_ARROW)  &kp SPACE
-&trans  &trans  &trans  &trans  &trans  &trans      &trans   &trans  &kp LEFT_ARROW      &kp LG(DOWN_ARROW)  &kp RIGHT_ARROW      &kp LC(W)
-&trans  &trans  &trans  &trans  &trans  &trans      &trans   &trans                                                               &kp LA(F4)
+&trans  &trans  &trans  &trans  &trans                       &kp K_BACK        &kp LS(LC(TAB))     &kp LG(UP_ARROW)    &kp LC(TAB)          &kp F5
+&trans  &trans  &trans  &trans  &trans  &trans      &kp F13  &kp LA(UP_ARROW)  &kp LG(LEFT_ARROW)  &kp LG(D)           &kp LG(RIGHT_ARROW)  &kp SPACE
+&trans  &trans  &trans  &trans  &trans  &trans      &trans   &trans            &kp LEFT_ARROW      &kp LG(DOWN_ARROW)  &kp RIGHT_ARROW      &kp LC(W)
+&trans  &trans  &trans  &trans  &trans  &trans      &trans   &trans                                                                         &kp LA(F4)
             >;
         };
 
