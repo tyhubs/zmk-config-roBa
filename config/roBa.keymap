@@ -4,7 +4,9 @@
 #include <dt-bindings/zmk/pointing.h>
 
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 80
+
 // OS設定を日本語キーボードのまま使用するための変換定義
+
 #define JP_DQUOTE       AT                // "
 #define JP_AMPERSAND    CARET             // &
 #define JP_QUOTE        AMPERSAND         // '
@@ -28,6 +30,7 @@
 #define JP_KANA         LANGUAGE_1        // かな
 #define JP_EISU         LANGUAGE_2        // 英数
 #define JP_HANZEN       GRAVE             // 半角/全角
+
 // OS設定を日本語キーボードのまま使用するための変換定義
 
 #define JP_DQUOTE       AT                // "
@@ -96,7 +99,7 @@
         };
 
         dh {
-            bindings = <&msc MOVE_Y(5)>;
+            bindings = <&msc SCRL_DOWN>;
             key-positions = <30 31 32>;
         };
 
