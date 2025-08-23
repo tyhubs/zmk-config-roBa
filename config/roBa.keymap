@@ -64,7 +64,6 @@
     };
 
     behaviors{
-
         lt_to_layer_0: lt_to_layer_0 {
             
             compatible = "zmk,behavior-hold-tap";
