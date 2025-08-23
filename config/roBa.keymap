@@ -26,29 +26,29 @@
     combos {
         compatible = "zmk,combos";
 
-        tab {
-            bindings = <&kp TAB>;
-            key-positions = <11 12>;
+        a {
+            bindings = <&mkp MB1>;
+            key-positions = <18 19>;
         };
 
-        shift_tab {
-            bindings = <&kp LS(TAB)>;
-            key-positions = <12 13>;
+        f {
+            bindings = <&mkp MB2>;
+            key-positions = <19 20>;
         };
 
-        muhennkann {
-            bindings = <&to_layer_0 INT_MUHENKAN>;
-            key-positions = <11 10>;
+        es {
+            bindings = <&kp ESCAPE>;
+            key-positions = <18 19 20>;
         };
 
-        double_quotation {
-            bindings = <&kp DOUBLE_QUOTES>;
-            key-positions = <20 21>;
+        dfs {
+            bindings = <&msc MOVE_Y(-5)>;
+            key-positions = <6 7 8>;
         };
 
-        eq {
-            bindings = <&kp EQUAL>;
-            key-positions = <24 25>;
+        dh {
+            bindings = <&msc MOVE_Y(5)>;
+            key-positions = <30 31 32>;
         };
     };
 
@@ -60,43 +60,47 @@
             label = "TO_LAYER_0";
         };
     };
+
     behaviors {
         encoder_msc_down_up: encoder_msc_down_up {
             compatible = "zmk,behavior-sensor-rotate";
             label = "ENCODER_MSC_DOWN_UP";
             #sensor-binding-cells = <0>;
             bindings = <&msc SCRL_UP>, <&msc SCRL_DOWN>;
+
             tap-ms = <20>;
         };
-        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
         default_layer {
             bindings = <
-&kp Q             &kp W         &kp E         &kp R  &kp T                                  &kp Y        &kp U   &lt 5 I  &kp O   &kp P
-&kp A             &kp S         &kp D         &kp F  &kp G        &kp LS(LG(S))      &kp B  &kp H        &kp J   &kp K    &kp L   &kp SQT
-&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V  &kp B        &kp B              &kp B  &trans       &trans  &trans   &trans  &kp SLASH
-&kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &kp A  &lt 2 SPACE  &kp B              &kp A  &lt 1 ENTER                           &kp DEL
+&kp Q             &kp W         &kp E         &kp R  &kp T                                             &kp Y        &kp U  &lt 5 I    &kp O       &kp P
+&kp A             &kp S         &kp D         &kp F  &kp G        &kp LS(LG(S))       &kp DEL          &kp H        &kp J  &kp K      &kp L       &kp SQT
+&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V  &kp B        &kp LEFT_SHIFT      &lt 2 BACKSPACE  &lt 1 N      &kp M  &kp COMMA  &kp PERIOD  &kp SLASH
+&kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &kp A  &lt 2 SPACE  &kp B               &lt 3 ENTER      &lt 1 ENTER                                &kp DEL
             >;
+
             sensor-bindings = <&encoder_msc_down_up>;
         };
 
         FUNCTION {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                       &kp F1  &kp F2  &kp F3  &kp F4  &kp F5
-&trans  &trans  &trans  &trans  &trans  &trans      &kp F13  &kp F6  &kp F7  &kp F8  &kp F9  &kp F10
-&trans  &trans  &trans  &trans  &trans  &trans      &trans   &trans  &trans  &trans  &trans  &kp F11
-&trans  &trans  &trans  &trans  &trans  &trans      &trans   &trans                          &kp F12
+&trans  &trans  &trans  &trans  &trans                       &kp F1  &kp LS(LC(TAB))     &kp LG(UP_ARROW)    &kp LC(TAB)          &kp F5
+&trans  &trans  &trans  &trans  &trans  &trans      &kp F13  &kp F6  &kp LG(LEFT_ARROW)  &kp LG(D)           &kp LG(RIGHT_ARROW)  &kp SPACE
+&trans  &trans  &trans  &trans  &trans  &trans      &trans   &trans  &kp LEFT_ARROW      &kp LG(DOWN_ARROW)  &kp RIGHT_ARROW      &kp LC(W)
+&trans  &trans  &trans  &trans  &trans  &trans      &trans   &trans                                                               &kp LA(F4)
             >;
         };
 
         NUM {
             bindings = <
-&kp MINUS                   &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp PLUS                                                   &kp CARET         &kp AMPERSAND      &kp TILDE       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
-&kp SLASH                   &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp ASTERISK  &kp LC(LA(KP_NUMBER_0))      &kp UNDERSCORE  &kp EXCLAMATION   &kp AT_SIGN        &kp HASH        &kp DOLLAR            &kp PERCENT
-&mt LEFT_SHIFT KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PERIOD    &kp EQUAL                    &trans          &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE  &kp RIGHT_BRACE       &kp BACKSLASH
-&trans                      &trans           &trans           &trans           &trans        &trans                       &trans          &trans                                                                     &kp PIPE
+&kp MINUS                   &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp PLUS                                                   &kp CARET        &kp N7        &kp N8        &kp N9        &kp RIGHT_PARENTHESIS
+&kp SLASH                   &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp ASTERISK  &kp LC(LA(KP_NUMBER_0))      &kp UNDERSCORE  &kp EXCLAMATION  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp PERCENT
+&mt LEFT_SHIFT KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PERIOD    &kp EQUAL                    &trans          &kp N0           &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp BACKSLASH
+&trans                      &trans           &trans           &trans           &trans        &trans                       &trans          &trans                                                     &kp PIPE
             >;
         };
 
