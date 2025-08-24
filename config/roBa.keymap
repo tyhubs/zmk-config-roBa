@@ -158,11 +158,10 @@
 
         ARROW {
             bindings = <
-&kp EXCLAMATION  &kp JP_DQUOTE           &kp HASH        &kp DOLLAR               &kp PERCENT  &kp JP_AMPERSAND    &kp JP_QUOTE        &kp JP_LPAREN  &kp JP_RPAREN    &kp JP_EQUAL
-&kp HOME         &kp LEFT_ARROW          &kp up_ARROW    &kp RIGHT_ARROW          &kp END      &trans      &trans  &trans         &kp LEFT_ARROW  &kp UP_ARROW          &kp RIGHT_ARROW        &kp AT_SIGN
-&kp LEFT_SHIFT   &kp LG(LS(LEFT_ARROW))  &kp DOWN_ARROW  &kp LG(LS(RIGHT_ARROW))  &trans       &trans      &trans  &trans         &trans          &kp DOWN_ARROW        &trans                 &trans
-&trans           &trans                  &trans          &trans                   &trans       &trans      &trans  &trans                                                                      &trans
-            >;
+&trans  &trans  &trans  &trans  &trans                      &trans  &kp F7  &kp F8  &kp F9  &kp F10
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &kp F4  &kp F5  &kp F6  &kp F11
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &kp F1  &kp F2  &kp F3  &kp F12
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
 
             sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
         };
