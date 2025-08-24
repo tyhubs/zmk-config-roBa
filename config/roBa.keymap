@@ -220,6 +220,8 @@
 &trans  &trans  &trans  &trans  &trans  &trans      &trans   &trans            &kp LEFT_ARROW      &kp LG(DOWN_ARROW)  &kp RIGHT_ARROW      &kp LC(W)
 &trans  &trans  &trans  &trans  &trans  &trans      &trans   &trans                                                                         &kp LA(F4)
             >;
+
+            sensor-bindings = <&encoder_msc_down_up>;
         };
 
         NUM {
@@ -229,6 +231,8 @@
 &mt LEFT_SHIFT KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PERIOD    &kp EQUAL                    &trans          &kp KP_EQUAL  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp KP_DIVIDE
 &trans                      &trans           &trans           &trans           &trans        &trans                       &trans          &trans                                                  &kp PIPE
             >;
+
+            sensor-bindings = <&encoder_msc_down_up>;
         };
 
         ARROW {
@@ -249,6 +253,7 @@
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans         &trans        &kp JP_RBRACE
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                       &kp JP_UNDERSCORE
             >;
+            sensor-bindings = <&encoder_msc_down_up>;
         };
 
         fun {
@@ -258,6 +263,7 @@
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &kp F1  &kp F2  &kp F3  &kp F12
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &kp JP_UNDERSCORE
             >;
+            sensor-bindings = <&encoder_msc_down_up>;
         };
 
         layer_6 {
@@ -267,6 +273,7 @@
 &trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans  &trans      &bt BT_CLR      &bt BT_DISC 0  &bt BT_DISC 1  &bt BT_DISC 3  &bt BT_DISC 3  &bt BT_DISC 4
 &trans  &trans        &trans        &trans        &trans  &trans      &trans          &trans                                                      &bt BT_CLR_ALL
             >;
+            sensor-bindings = <&encoder_msc_down_up>;
         };
     };
 };
