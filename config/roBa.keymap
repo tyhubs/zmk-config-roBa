@@ -6,6 +6,7 @@
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 80
 
 // OS設定を日本語キーボードのまま使用するための変換定義
+
 #define JP_DQUOTE       AT                // "
 #define JP_AMPERSAND    CARET             // &
 #define JP_QUOTE        AMPERSAND         // '
@@ -234,7 +235,7 @@
         FUNCTION {
             bindings = <
 &kp NUMBER_1  &kp NUMBER_2    &kp NUMBER_3    &kp NUMBER_4     &kp N5                            &kp LC(NUMBER_1)  &kp K_BACK          &kp LG(UP_ARROW)    &kp LA(UP_ARROW)     &kp F5
-&trans        &kp LEFT_ARROW  &kp UP_ARROW    &kp RIGHT_ARROW  &trans  &trans            &trans  &kp LC(NUMBER_2)  &kp LG(LEFT_ARROW)  &kp LG(D)           &kp LG(RIGHT_ARROW)  &kp SPACE
+&trans        &kp LEFT_ARROW  &kp UP_ARROW    &kp RIGHT_ARROW  &kp N0  &trans            &trans  &kp LC(NUMBER_2)  &kp LG(LEFT_ARROW)  &kp LG(D)           &kp LG(RIGHT_ARROW)  &kp SPACE
 &trans        &trans          &kp DOWN_ARROW  &trans           &trans  &kp LS(CAPS)      &trans  &trans            &kp LEFT_ARROW      &kp LG(DOWN_ARROW)  &kp RIGHT_ARROW      &kp LC(W)
 &trans        &trans          &trans          &trans           &trans  &trans            &trans  &trans                                                                         &kp LA(F4)
             >;
