@@ -193,7 +193,7 @@
         };
 
         rotawe {
-            bindings = <&kp LC(PLUS)>;
+            bindings = <&kp LC(KP_PLUS)>;
             key-positions = <11 12 13>;
         };
     };
