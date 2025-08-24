@@ -121,6 +121,16 @@
             bindings = <&sl 6>;
             key-positions = <0 1 2 3 4>;
         };
+
+        refresh {
+            bindings = <&kp F5>;
+            key-positions = <18 17 20 19>;
+        };
+
+        folder {
+            bindings = <&kp LC(LS(N))>;
+            key-positions = <29 30 31 32>;
+        };
     };
 
     behaviors {
