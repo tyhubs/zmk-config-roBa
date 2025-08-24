@@ -97,6 +97,11 @@
             key-positions = <10 11 12 13>;
         };
 
+        fsd {
+            bindings = <&sl 3>;
+            key-positions = <13 12>;
+        };
+
         arr {
             bindings = <&sl 3>;
             key-positions = <29 30>;
@@ -105,16 +110,6 @@
         dfasdfas {
             bindings = <&sl 3>;
             key-positions = <26 25>;
-        };
-
-        zoom {
-            bindings = <&kp LC(PLUS)>;
-            key-positions = <6 7 8 9>;
-        };
-
-        mik {
-            bindings = <&kp KP_MINUS>;
-            key-positions = <30 31 32 33>;
         };
     };
 
@@ -137,7 +132,7 @@
 &kp Q             &kp W         &kp E         &kp R      &kp T                                                                   &kp Y     &kp U  &kp I      &kp O       &kp P
 &kp A             &kp S         &kp D         &kp F      &kp G                   &kp LC(N0)                     &kp DEL          &kp H     &kp J  &kp K      &kp L       &kp MINUS
 &mt LEFT_SHIFT Z  &kp X         &kp C         &kp V      &kp B                   &kp LEFT_SHIFT                 &lt 2 BACKSPACE  &lt 1 N   &kp M  &kp COMMA  &kp PERIOD  &kp SLASH
-&kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &lt 5 TAB  &mt INT_MUHENKAN SPACE  &mt LANGUAGE_2 LANGUAGE_1      &lt 3 ENTER      &mkp MB1                                &kp UNDERSCORE
+&kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &lt 5 TAB  &mt INT_MUHENKAN SPACE  &mt LANGUAGE_2 LANGUAGE_1      &lt 3 ENTER      &mkp MB1                                &kp LEFT_CONTROL
             >;
 
             sensor-bindings = <&encoder_msc_down_up>;
@@ -181,10 +176,14 @@
             >;
         };
 
-@@ -185,13 +185,14 @@
+        fun {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans                      &trans  &kp F7  &kp F8  &kp F9  &kp F10
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &kp F4  &kp F5  &kp F6  &kp F11
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &kp F1  &kp F2  &kp F3  &kp F12
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
             >;
         };
-
 
         layer_6 {
             bindings = <
