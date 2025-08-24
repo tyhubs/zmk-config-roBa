@@ -78,12 +78,12 @@
         };
 
         wrty {
-            bindings = <&kp HOME>;
+            bindings = <&kp LC(HOME)>;
             key-positions = <6 7 8 9>;
         };
 
         q3qr {
-            bindings = <&kp END>;
+            bindings = <&kp LC(END)>;
             key-positions = <30 31 32 33>;
         };
 
@@ -152,14 +152,39 @@
             key-positions = <25 24 23 22>;
         };
 
-        outlook {
-            bindings = <&kp LC(NUMBER_1)>;
-            key-positions = <30 31>;
+        lkljklj {
+            bindings = <&kp LC(PAGE_DOWN)>;
+            key-positions = <8 7>;
         };
 
-        kod {
-            bindings = <&kp LC(NUMBER_2)>;
-            key-positions = <31 32>;
+        jkoiunounn {
+            bindings = <&kp LC(PAGE_UP)>;
+            key-positions = <6 7>;
+        };
+
+        save2 {
+            bindings = <&kp LS(LC(S))>;
+            key-positions = <1 2>;
+        };
+
+        save {
+            bindings = <&kp F12>;
+            key-positions = <11 12>;
+        };
+
+        office {
+            bindings = <&kp LC(F1)>;
+            key-positions = <1 2 3>;
+        };
+
+        short {
+            bindings = <&kp LA(LC(NUMBER_4))>;
+            key-positions = <6 7 8 9 29>;
+        };
+
+        sho {
+            bindings = <&kp LA(LC(NUMBER_3))>;
+            key-positions = <29 18 19 20 21>;
         };
     };
 
