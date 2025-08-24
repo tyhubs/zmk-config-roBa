@@ -108,7 +108,7 @@
         };
 
         zoom {
-            bindings = <&kp LC(PLUS)>;
+            bindings = <&kp LC(KP_PLUS)>;
             key-positions = <17 18 19>;
         };
 
