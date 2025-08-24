@@ -168,7 +168,7 @@
 
         MOUSE {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &kp JP_TILDE  &kp JP_YEN
+&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans    &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  JP_LBRACE
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  JP_RBRACE
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
