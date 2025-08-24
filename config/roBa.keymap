@@ -141,6 +141,16 @@
             bindings = <&sl 4>;
             key-positions = <26 25 24>;
         };
+
+        up {
+            bindings = <&kp C_VOLUME_UP>;
+            key-positions = <0 1 2 3>;
+        };
+
+        oolume {
+            bindings = <&kp C_VOLUME_DOWN>;
+            key-positions = <25 24 23 22>;
+        };
     };
 
     behaviors {
