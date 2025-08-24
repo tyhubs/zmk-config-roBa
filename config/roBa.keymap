@@ -216,7 +216,7 @@
 &kp Q      &kp W         &kp E         &kp R      &kp T                                                                   &kp Y     &kp U  &kp I      &kp O       &kp P
 &kp A      &kp S         &kp D         &kp F      &kp G                   &kp LC(N0)                     &kp DEL          &kp H     &kp J  &kp K      &kp L       &kp MINUS
 &kp Z      &kp X         &kp C         &kp V      &kp B                   &kp LEFT_SHIFT                 &lt 2 BACKSPACE  &lt 1 N   &kp M  &kp COMMA  &kp PERIOD  &kp SLASH
-&kp LCTRL  &kp LEFT_WIN  &kp LEFT_ALT  &lt 0 TAB  &mt INT_MUHENKAN SPACE  &mt LANGUAGE_2 LANGUAGE_1      &kp ENTER        &mkp MB1                                &kp LEFT_CONTROL
+&kp LCTRL  &kp LEFT_WIN  &kp LEFT_ALT  &lt 5 TAB  &mt INT_MUHENKAN SPACE  &mt LANGUAGE_2 LANGUAGE_1      &kp ENTER        &mkp MB1                                &kp LEFT_CONTROL
             >;
 
             sensor-bindings = <&encoder_msc_down_up>;
@@ -255,7 +255,7 @@
             sensor-bindings = <&encoder_msc_left_right>;
         };
 
-        layer_6 {
+        functionlayer {
             bindings = <
 &trans  &trans        &trans        &trans        &trans                              &bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2   &bt BT_SEL 3   &bt BT_SEL 4
 &trans  &trans        &trans        &trans        &trans  &trans      &bt BT_CLR_ALL  &trans         &bt BT_PRV     &trans         &bt BT_NXT     &trans
@@ -264,6 +264,15 @@
             >;
 
             sensor-bindings = <&encoder_msc_left_right>;
+        };
+
+        maz {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans                      &trans  &kp F7  &kp F8  &kp F9  &kp F10
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &kp F4  &kp F5  &kp F6  &kp F11
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &kp F1  &kp F2  &kp F3  &kp F12
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
+            >;
         };
     };
 };
