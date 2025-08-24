@@ -192,10 +192,14 @@
         encoder_msc_down_up: encoder_msc_down_up {
             compatible = "zmk,behavior-sensor-rotate";
             label = "ENCODER_MSC_DOWN_UP";
+             tap-ms = <20>;
+        };
+        encoder_msc_left_right: encoder_msc_:eft_up {
+            compatible = "zmk,behavior-sensor-rotate";
+            label = "ENCODER_MSC_LEFT_RIGHT";
             #sensor-binding-cells = <0>;
-            bindings = <&msc SCRL_UP>, <&msc SCRL_DOWN>;
-            bindings = <&msc SCRL_RIGHT>, <&msc SCRL_RIGHT>;
-            tap-ms = <20>;
+            bindings = <&msc SCRL_LEFT>, <&msc SCRL_RIGHT>;
+             tap-ms = <20>;
         };
     };
 
@@ -221,7 +225,7 @@
 &trans  &trans  &trans  &trans  &trans  &trans      &trans   &trans                                                                         &kp LA(F4)
             >;
 
-            sensor-bindings = <&encoder_msc_down_up>;
+            sensor-bindings = <&encoder_msc_left_right>;
         };
 
         NUM {
@@ -231,7 +235,6 @@
 &mt LEFT_SHIFT KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PERIOD    &kp EQUAL                    &trans          &kp KP_EQUAL  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp KP_DIVIDE
 &trans                      &trans           &trans           &trans           &trans        &trans                       &trans          &trans                                                  &kp PIPE
             >;
-
             sensor-bindings = <&encoder_msc_left_right>;
         };
 
@@ -242,7 +245,6 @@
 &kp LEFT_SHIFT   &kp LG(LS(LEFT_ARROW))  &kp DOWN_ARROW  &kp LG(LS(RIGHT_ARROW))  &trans       &trans      &trans  &trans            &trans          &kp DOWN_ARROW  &trans           &trans
 &trans           &trans                  &trans          &trans                   &trans       &trans      &trans  &trans                                                             &kp JP_UNDERSCORE
             >;
-
             sensor-bindings = <&encoder_msc_left_right>;
         };
 
