@@ -97,11 +97,6 @@
             key-positions = <10 11 12 13>;
         };
 
-        fsd {
-            bindings = <&sl 3>;
-            key-positions = <13 12>;
-        };
-
         arr {
             bindings = <&sl 3>;
             key-positions = <29 30>;
@@ -158,10 +153,10 @@
 
         ARROW {
             bindings = <
-&kp EXCLAMATION  &kp JP_DQUOTE           &kp HASH        &kp DOLLAR               &kp PERCENT  &kp JP_AMPERSAND    &kp JP_QUOTE        &kp JP_LPAREN  &kp JP_RPAREN    &kp JP_EQUAL
-&kp HOME         &kp LEFT_ARROW          &kp DOWN_ARROW  &kp RIGHT_ARROW          &kp END      &trans      &trans  &trans         &kp LEFT_ARROW  &kp UP_ARROW          &kp RIGHT_ARROW        &kp AT_SIGN
-&kp LEFT_SHIFT   &kp LG(LS(LEFT_ARROW))  &kp DOWN_ARROW  &kp LG(LS(RIGHT_ARROW))  &trans       &trans      &trans  &trans         &trans          &kp DOWN_ARROW        &trans                 &trans
-&trans           &trans                  &trans          &trans                   &trans       &trans      &trans  &trans                                                                      &trans
+&kp EXCLAMATION  &kp JP_DQUOTE           &kp HASH        &kp DOLLAR               &kp PERCENT                      &kp JP_AMPERSAND  &kp JP_QUOTE    &kp JP_LPAREN   &kp JP_RPAREN    &kp JP_EQUAL
+&kp HOME         &kp LEFT_ARROW          &kp DOWN_ARROW  &kp RIGHT_ARROW          &kp END      &trans      &trans  &trans            &kp LEFT_ARROW  &kp UP_ARROW    &kp RIGHT_ARROW  &kp AT_SIGN
+&kp LEFT_SHIFT   &kp LG(LS(LEFT_ARROW))  &kp DOWN_ARROW  &kp LG(LS(RIGHT_ARROW))  &trans       &trans      &trans  &trans            &trans          &kp DOWN_ARROW  &trans           &trans
+&trans           &trans                  &trans          &trans                   &trans       &trans      &trans  &trans                                                             &trans
             >;
 
             sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
