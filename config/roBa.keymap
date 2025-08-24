@@ -186,6 +186,16 @@
             bindings = <&kp LA(LC(NUMBER_2))>;
             key-positions = <29 30 31 32 33>;
         };
+
+        rota {
+            bindings = <&kp LC(LS(MINUS))>;
+            key-positions = <10 11 12>;
+        };
+
+        rota {
+            bindings = <&kp LC(PLUS)>;
+            key-positions = <11 12 13>;
+        };
     };
 
     behaviors {
