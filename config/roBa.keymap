@@ -235,20 +235,21 @@
 
         NUM {
             bindings = <
-&kp NUMBER_1                &kp NUMBER_2     &kp NUMBER_3    &kp NUMBER_4     &kp N5                                                     &kp JP_PLUS   &kp N7        &kp N8        &kp N9        &kp N0
-&kp SLASH                   &kp LEFT_ARROW   &kp UP_ARROW    &kp RIGHT_ARROW  &kp ASTERISK  &kp LC(LA(KP_NUMBER_0))      &kp UNDERSCORE  &kp MINUS     &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp KP_MULTIPLY
-&mt LEFT_SHIFT KP_NUMBER_0  &kp KP_NUMBER_1  &kp DOWN_ARROW  &kp KP_NUMBER_3  &kp PERIOD    &kp EQUAL                    &trans          &kp KP_EQUAL  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp KP_DIVIDE
-&trans                      &trans           &trans          &trans           &trans        &trans                       &trans          &trans                                                  &kp JP_UNDERSCORE
+&kp NUMBER_1                &kp NUMBER_2     &kp NUMBER_3    &kp NUMBER_4     &kp N5                                                     &kp JP_PLUS  &kp N7        &kp N8        &kp N9        &kp N0
+&kp SLASH                   &kp LEFT_ARROW   &kp UP_ARROW    &kp RIGHT_ARROW  &kp ASTERISK  &kp LC(LA(KP_NUMBER_0))      &kp UNDERSCORE  &kp MINUS    &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp KP_MULTIPLY
+&mt LEFT_SHIFT KP_NUMBER_0  &kp KP_NUMBER_1  &kp DOWN_ARROW  &kp KP_NUMBER_3  &kp PERIOD    &kp EQUAL                    &trans          &kp EQUAL    &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp KP_DIVIDE
+&trans                      &trans           &trans          &trans           &trans        &trans                       &trans          &trans                                                 &kp JP_UNDERSCORE
             >;
+
             sensor-bindings = <&encoder_msc_left_right>;
         };
 
         ARROW {
             bindings = <
-&kp EXCLAMATION  &kp JP_DQUOTE           &kp HASH        &kp DOLLAR               &kp PERCENT                      &kp JP_AMPERSAND  &kp JP_QUOTE    &kp JP_LPAREN   &kp JP_RPAREN    &kp JP_AT
-&kp HOME         &kp LEFT_ARROW          &kp UP_ARROW    &kp RIGHT_ARROW          &kp END      &trans      &trans  &trans            &kp LEFT_ARROW  &kp JP_LBRACKET    &kp JP_RBRACKET  &kp JP_AT
-&kp LEFT_SHIFT   &kp LG(LS(LEFT_ARROW))  &kp DOWN_ARROW  &kp LG(LS(RIGHT_ARROW))  &trans       &trans      &trans  &trans            &trans          &kp JP_LBRACE  &kp JP_RBRACE     &trans
-&trans           &trans                  &trans          &trans                   &trans       &trans      &trans  &trans                                                             &kp JP_UNDERSCORE
+&kp EXCLAMATION  &kp JP_DQUOTE           &kp HASH        &kp DOLLAR               &kp PERCENT                      &kp JP_AMPERSAND  &kp JP_QUOTE    &kp JP_LPAREN    &kp JP_RPAREN    &kp JP_AT
+&kp HOME         &kp LEFT_ARROW          &kp UP_ARROW    &kp RIGHT_ARROW          &kp END      &trans      &trans  &trans            &kp LEFT_ARROW  &kp JP_LBRACKET  &kp JP_RBRACKET  &kp JP_AT
+&kp LEFT_SHIFT   &kp LG(LS(LEFT_ARROW))  &kp DOWN_ARROW  &kp LG(LS(RIGHT_ARROW))  &trans       &trans      &trans  &trans            &trans          &kp JP_LBRACE    &kp JP_RBRACE    &trans
+&trans           &trans                  &trans          &trans                   &trans       &trans      &trans  &trans                                                              &kp JP_UNDERSCORE
             >;
 
             sensor-bindings = <&encoder_msc_left_right>;
@@ -256,10 +257,10 @@
 
         kigou {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &kp JP_LBRACKET         &kp JP_RBRACKET    &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &kp SEMICOLON  &kp JP_COLON  &kp JP_LBRACE
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans         &trans        &kp JP_RBRACE
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                       &kp JP_UNDERSCORE
+&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &kp JP_LBRACKET  &kp JP_RBRACKET  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &kp SEMICOLON    &kp JP_COLON     &kp JP_LBRACE
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans           &trans           &kp JP_RBRACE
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                            &kp JP_UNDERSCORE
             >;
 
             sensor-bindings = <&encoder_msc_left_right>;
