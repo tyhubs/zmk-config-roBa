@@ -119,7 +119,7 @@
 
         buletooth {
             bindings = <&sl 6>;
-            key-positions = <0 1 2 3 4>;
+            key-positions = <37 38 39>;
         };
 
         refresh {
