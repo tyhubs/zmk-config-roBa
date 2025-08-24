@@ -188,7 +188,7 @@
         };
 
         fewe {
-            bindings = <&kp TAB>;
+            bindings = <&sl 4>;
             key-positions = <37 38>;
         };
     };
