@@ -230,10 +230,9 @@
         NUM {
             bindings = <
 &kp NUMBER_1                &kp NUMBER_2     &kp NUMBER_3     &kp NUMBER_4     &kp N5                                                     &kp JP_PLUS   &kp N7        &kp N8        &kp N9        &kp N0
-&kp SLASH                   &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp ASTERISK  &kp LC(LA(KP_NUMBER_0))      &kp UNDERSCORE  &kp MINUS     &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp KP_MULTIPLY
-&mt LEFT_SHIFT KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PERIOD    &kp EQUAL                    &trans          &kp KP_EQUAL  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp KP_DIVIDE
-&trans                      &trans           &trans           &trans           &trans        &trans                       &trans          &trans                                                  &kp PIPE
-            >;
+&kp SLASH                   &kp LEFT_ARROW  &kp UP_ARROW    &kp RIGHT_ARROW    &kp ASTERISK  &kp LC(LA(KP_NUMBER_0))      &kp UNDERSCORE  &kp MINUS     &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp KP_MULTIPLY
+&mt LEFT_SHIFT KP_NUMBER_0  &kp KP_NUMBER_1  &kp DOWN_ARROW  &kp KP_NUMBER_3  &kp PERIOD    &kp EQUAL                    &trans          &kp KP_EQUAL  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp KP_DIVIDE
+&trans                      &trans           &trans           &trans           &trans        &trans                       &trans          &trans                                                  &kp JP_UNDERSCORE
 
             sensor-bindings = <&encoder_msc_left_right>;
         };
@@ -241,7 +240,7 @@
         ARROW {
             bindings = <
 &kp EXCLAMATION  &kp JP_DQUOTE           &kp HASH        &kp DOLLAR               &kp PERCENT                      &kp JP_AMPERSAND  &kp JP_QUOTE    &kp JP_LPAREN   &kp JP_RPAREN    &kp JP_EQUAL
-&kp HOME         &kp LEFT_ARROW          &kp DOWN_ARROW  &kp RIGHT_ARROW          &kp END      &trans      &trans  &trans            &kp LEFT_ARROW  &kp UP_ARROW    &kp RIGHT_ARROW  &kp JP_AT
+&kp HOME         &kp LEFT_ARROW  &kp UP_ARROW    &kp RIGHT_ARROW          &kp END      &trans      &trans  &trans            &kp LEFT_ARROW  &kp UP_ARROW    &kp RIGHT_ARROW  &kp JP_AT
 &kp LEFT_SHIFT   &kp LG(LS(LEFT_ARROW))  &kp DOWN_ARROW  &kp LG(LS(RIGHT_ARROW))  &trans       &trans      &trans  &trans            &trans          &kp DOWN_ARROW  &trans           &trans
 &trans           &trans                  &trans          &trans                   &trans       &trans      &trans  &trans                                                             &kp JP_UNDERSCORE
             >;
@@ -263,8 +262,8 @@
         fun {
             bindings = <
 &trans  &trans  &trans  &trans  &trans                      &trans  &kp F7  &kp F8  &kp F9  &kp F10
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &kp F4  &kp F5  &kp F6  &kp F11
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &kp F1  &kp F2  &kp F3  &kp F12
+&trans  &kp LEFT_ARROW  &kp UP_ARROW    &kp RIGHT_ARROW  &trans  &trans      &trans  &trans  &kp F4  &kp F5  &kp F6  &kp F11
+&trans  &trans  &kp DOWN_ARROW  &trans  &trans  &trans      &trans  &trans  &kp F1  &kp F2  &kp F3  &kp F12
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &kp JP_UNDERSCORE
             >;
 
