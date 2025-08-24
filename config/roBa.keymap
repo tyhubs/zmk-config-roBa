@@ -136,6 +136,11 @@
             bindings = <&kp LC(N)>;
             key-positions = <5 6 7 8>;
         };
+
+        layer {
+            bindings = <&sl 4>;
+            key-positions = <26 25 24>;
+        };
     };
 
     behaviors {
@@ -192,7 +197,7 @@
             sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
         };
 
-        MOUSE {
+        kigou {
             bindings = <
 &trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
