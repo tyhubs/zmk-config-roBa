@@ -194,7 +194,7 @@
             label = "ENCODER_MSC_DOWN_UP";
              tap-ms = <20>;
         };
-        encoder_msc_left_right: encoder_msc_:left_up {
+        encoder_msc_left_right: encoder_msc_:left_right {
             compatible = "zmk,behavior-sensor-rotate";
             label = "ENCODER_MSC_LEFT_RIGHT";
             #sensor-binding-cells = <0>;
