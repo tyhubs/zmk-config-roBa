@@ -224,10 +224,10 @@
 
         FUNCTION {
             bindings = <
-&kp NUMBER_1  &kp NUMBER_2    &kp NUMBER_3    &kp NUMBER_4     &kp N5                       &kp LC(NUMBER_1)  &kp C_AC_BACK       &kp LG(UP_ARROW)    &kp LA(UP_ARROW)     &kp F5
-&trans        &kp LEFT_ARROW  &kp UP_ARROW    &kp RIGHT_ARROW  &trans  &trans      &kp F13  &kp LC(NUMBER_2)  &kp LG(LEFT_ARROW)  &kp LG(D)           &kp LG(RIGHT_ARROW)  &kp SPACE
-&trans        &trans          &kp DOWN_ARROW  &trans           &trans  &trans      &trans   &trans            &kp LEFT_ARROW      &kp LG(DOWN_ARROW)  &kp RIGHT_ARROW      &kp LC(W)
-&trans        &trans          &trans          &trans           &trans  &trans      &trans   &trans                                                                         &kp LA(F4)
+&kp NUMBER_1  &kp NUMBER_2    &kp NUMBER_3    &kp NUMBER_4     &kp N5                             &kp LC(NUMBER_1)  &kp C_AC_BACK       &kp LG(UP_ARROW)    &kp LA(UP_ARROW)     &kp F5
+&trans        &kp LEFT_ARROW  &kp UP_ARROW    &kp RIGHT_ARROW  &trans  &trans            &kp F13  &kp LC(NUMBER_2)  &kp LG(LEFT_ARROW)  &kp LG(D)           &kp LG(RIGHT_ARROW)  &kp SPACE
+&trans        &trans          &kp DOWN_ARROW  &trans           &trans  &kp LS(CAPS)      &trans   &trans            &kp LEFT_ARROW      &kp LG(DOWN_ARROW)  &kp RIGHT_ARROW      &kp LC(W)
+&trans        &trans          &trans          &trans           &trans  &trans            &trans   &trans                                                                         &kp LA(F4)
             >;
 
             sensor-bindings = <&encoder_msc_left_right>;
@@ -237,7 +237,7 @@
             bindings = <
 &kp NUMBER_1                &kp NUMBER_2     &kp NUMBER_3    &kp NUMBER_4     &kp N5                                                     &kp JP_PLUS  &kp N7        &kp N8        &kp N9        &kp N0
 &kp SLASH                   &kp LEFT_ARROW   &kp UP_ARROW    &kp RIGHT_ARROW  &kp ASTERISK  &kp LC(LA(KP_NUMBER_0))      &kp UNDERSCORE  &kp MINUS    &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp KP_MULTIPLY
-&mt LEFT_SHIFT KP_NUMBER_0  &kp KP_NUMBER_1  &kp DOWN_ARROW  &kp KP_NUMBER_3  &kp PERIOD    &kp EQUAL                    &trans          &kp EQUAL    &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp KP_DIVIDE
+&mt LEFT_SHIFT KP_NUMBER_0  &kp KP_NUMBER_1  &kp DOWN_ARROW  &kp KP_NUMBER_3  &kp PERIOD    &kp LS(CAPS)                 &trans          &kp EQUAL    &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp KP_DIVIDE
 &trans                      &trans           &trans          &trans           &trans        &trans                       &trans          &trans                                                 &kp JP_UNDERSCORE
             >;
 
@@ -246,11 +246,12 @@
 
         ARROW {
             bindings = <
-&kp EXCLAMATION  &kp JP_DQUOTE           &kp HASH        &kp DOLLAR               &kp PERCENT                      &kp JP_AMPERSAND  &kp JP_QUOTE  &kp JP_LPAREN    &kp JP_RPAREN    &kp JP_AT
-&kp HOME         &kp LEFT_ARROW          &kp UP_ARROW    &kp RIGHT_ARROW          &kp END      &trans      &trans  &trans            &kp JP_COLON     &kp JP_LBRACKET  &kp JP_RBRACKET  &kp JP_TILDE
-&kp LEFT_SHIFT   &kp LG(LS(LEFT_ARROW))  &kp DOWN_ARROW  &kp LG(LS(RIGHT_ARROW))  &trans       &trans      &trans  &trans            &kp SEMI      &kp JP_LBRACE    &kp JP_RBRACE    &kp JP_YEN
-&trans           &trans                  &trans          &trans                   &trans       &trans      &trans  &trans                                                            &kp JP_UNDERSCORE
+&kp EXCLAMATION  &kp JP_DQUOTE           &kp HASH        &kp DOLLAR               &kp PERCENT                        &kp JP_AMPERSAND  &kp JP_QUOTE  &kp JP_LPAREN    &kp JP_RPAREN    &kp JP_AT
+&kp HOME         &kp LEFT_ARROW          &kp UP_ARROW    &kp RIGHT_ARROW          &kp END      &trans        &trans  &trans            &kp JP_COLON  &kp JP_LBRACKET  &kp JP_RBRACKET  &kp JP_TILDE
+&kp LEFT_SHIFT   &kp LG(LS(LEFT_ARROW))  &kp DOWN_ARROW  &kp LG(LS(RIGHT_ARROW))  &trans       &kp CAPS      &trans  &trans            &kp SEMI      &kp JP_LBRACE    &kp JP_RBRACE    &kp JP_YEN
+&trans           &trans                  &trans          &trans                   &trans       &trans        &trans  &trans                                                            &kp JP_UNDERSCORE
             >;
+
             sensor-bindings = <&encoder_msc_left_right>;
         };
 
