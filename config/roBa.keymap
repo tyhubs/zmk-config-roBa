@@ -216,10 +216,10 @@
 
         FUNCTION {
             bindings = <
-&kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5                       &kp C_AC_BACK     &kp LS(LC(TAB))     &kp LG(UP_ARROW)    &kp LC(TAB)          &kp F5
-&trans        &trans        &trans        &trans        &trans  &trans      &kp F13  &kp LA(UP_ARROW)  &kp LG(LEFT_ARROW)  &kp LG(D)           &kp LG(RIGHT_ARROW)  &kp SPACE
-&trans        &trans        &trans        &trans        &trans  &trans      &trans   &trans            &kp LEFT_ARROW      &kp LG(DOWN_ARROW)  &kp RIGHT_ARROW      &kp LC(W)
-&trans        &trans        &trans        &trans        &trans  &trans      &trans   &trans                                                                         &kp LA(F4)
+&kp NUMBER_1  &kp NUMBER_2    &kp NUMBER_3    &kp NUMBER_4     &kp N5                       &kp C_AC_BACK     &kp LS(LC(TAB))     &kp LG(UP_ARROW)    &kp LC(TAB)          &kp F5
+&trans        &kp LEFT_ARROW  &kp UP_ARROW    &kp RIGHT_ARROW  &trans  &trans      &kp F13  &kp LA(UP_ARROW)  &kp LG(LEFT_ARROW)  &kp LG(D)           &kp LG(RIGHT_ARROW)  &kp SPACE
+&trans        &trans          &kp DOWN_ARROW  &trans           &trans  &trans      &trans   &trans            &kp LEFT_ARROW      &kp LG(DOWN_ARROW)  &kp RIGHT_ARROW      &kp LC(W)
+&trans        &trans          &trans          &trans           &trans  &trans      &trans   &trans                                                                         &kp LA(F4)
             >;
 
             sensor-bindings = <&encoder_msc_left_right>;
