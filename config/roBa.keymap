@@ -137,11 +137,6 @@
             key-positions = <5 6 7 8>;
         };
 
-        layer {
-            bindings = <&sl 4>;
-            key-positions = <26 25 24>;
-        };
-
         up {
             bindings = <&kp C_VOLUME_UP>;
             key-positions = <0 1 2 3>;
@@ -192,14 +187,16 @@
         encoder_msc_down_up: encoder_msc_down_up {
             compatible = "zmk,behavior-sensor-rotate";
             label = "ENCODER_MSC_DOWN_UP";
-             tap-ms = <20>;
+            tap-ms = <20>;
         };
+
         encoder_msc_left_right: encoder_msc_left_right {
             compatible = "zmk,behavior-sensor-rotate";
             label = "ENCODER_MSC_LEFT_RIGHT";
             #sensor-binding-cells = <0>;
             bindings = <&msc SCRL_LEFT>, <&msc SCRL_RIGHT>;
-             tap-ms = <20>;
+
+            tap-ms = <20>;
         };
     };
 
@@ -219,10 +216,10 @@
 
         FUNCTION {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                       &kp C_AC_BACK     &kp LS(LC(TAB))     &kp LG(UP_ARROW)    &kp LC(TAB)          &kp F5
-&trans  &trans  &trans  &trans  &trans  &trans      &kp F13  &kp LA(UP_ARROW)  &kp LG(LEFT_ARROW)  &kp LG(D)           &kp LG(RIGHT_ARROW)  &kp SPACE
-&trans  &trans  &trans  &trans  &trans  &trans      &trans   &trans            &kp LEFT_ARROW      &kp LG(DOWN_ARROW)  &kp RIGHT_ARROW      &kp LC(W)
-&trans  &trans  &trans  &trans  &trans  &trans      &trans   &trans                                                                         &kp LA(F4)
+&kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5                       &kp C_AC_BACK     &kp LS(LC(TAB))     &kp LG(UP_ARROW)    &kp LC(TAB)          &kp F5
+&trans        &trans        &trans        &trans        &trans  &trans      &kp F13  &kp LA(UP_ARROW)  &kp LG(LEFT_ARROW)  &kp LG(D)           &kp LG(RIGHT_ARROW)  &kp SPACE
+&trans        &trans        &trans        &trans        &trans  &trans      &trans   &trans            &kp LEFT_ARROW      &kp LG(DOWN_ARROW)  &kp RIGHT_ARROW      &kp LC(W)
+&trans        &trans        &trans        &trans        &trans  &trans      &trans   &trans                                                                         &kp LA(F4)
             >;
 
             sensor-bindings = <&encoder_msc_left_right>;
@@ -230,11 +227,12 @@
 
         NUM {
             bindings = <
-&kp NUMBER_1                &kp NUMBER_2     &kp NUMBER_3     &kp NUMBER_4     &kp N5                                                     &kp JP_PLUS      &kp N7        &kp N8        &kp N9        &kp N0
+&kp NUMBER_1                &kp NUMBER_2     &kp NUMBER_3     &kp NUMBER_4     &kp N5                                                     &kp JP_PLUS   &kp N7        &kp N8        &kp N9        &kp N0
 &kp SLASH                   &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp ASTERISK  &kp LC(LA(KP_NUMBER_0))      &kp UNDERSCORE  &kp MINUS     &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp KP_MULTIPLY
 &mt LEFT_SHIFT KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PERIOD    &kp EQUAL                    &trans          &kp KP_EQUAL  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp KP_DIVIDE
 &trans                      &trans           &trans           &trans           &trans        &trans                       &trans          &trans                                                  &kp PIPE
             >;
+
             sensor-bindings = <&encoder_msc_left_right>;
         };
 
@@ -245,6 +243,7 @@
 &kp LEFT_SHIFT   &kp LG(LS(LEFT_ARROW))  &kp DOWN_ARROW  &kp LG(LS(RIGHT_ARROW))  &trans       &trans      &trans  &trans            &trans          &kp DOWN_ARROW  &trans           &trans
 &trans           &trans                  &trans          &trans                   &trans       &trans      &trans  &trans                                                             &kp JP_UNDERSCORE
             >;
+
             sensor-bindings = <&encoder_msc_left_right>;
         };
 
@@ -255,6 +254,7 @@
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans         &trans        &kp JP_RBRACE
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                       &kp JP_UNDERSCORE
             >;
+
             sensor-bindings = <&encoder_msc_left_right>;
         };
 
@@ -265,6 +265,7 @@
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &kp F1  &kp F2  &kp F3  &kp F12
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &kp JP_UNDERSCORE
             >;
+
             sensor-bindings = <&encoder_msc_left_right>;
         };
 
@@ -275,6 +276,7 @@
 &trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans  &trans      &bt BT_CLR      &bt BT_DISC 0  &bt BT_DISC 1  &bt BT_DISC 3  &bt BT_DISC 3  &bt BT_DISC 4
 &trans  &trans        &trans        &trans        &trans  &trans      &trans          &trans                                                      &bt BT_CLR_ALL
             >;
+
             sensor-bindings = <&encoder_msc_left_right>;
         };
     };
