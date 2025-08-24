@@ -5,8 +5,6 @@
 
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 80
 
-
-
 // OS設定を日本語キーボードのまま使用するための変換定義
 
 #define JP_DQUOTE       AT                // "
@@ -103,6 +101,16 @@
             bindings = <&sl 3>;
             key-positions = <13 12>;
         };
+
+        arr {
+            bindings = <&sl 3>;
+            key-positions = <29 30>;
+        };
+
+        dfasdfas {
+            bindings = <&sl 3>;
+            key-positions = <26 25>;
+        };
     };
 
     behaviors {
@@ -150,10 +158,10 @@
 
         ARROW {
             bindings = <
-&kp ESCAPE      &kp LC(LS(TAB))         &kp UP_ARROW    &kp LC(TAB)              &trans                       &trans  &trans          &kp UP_ARROW    &trans           &trans
-&kp HOME        &kp LEFT_ARROW          &kp DOWN_ARROW  &kp RIGHT_ARROW          &kp END  &trans      &trans  &trans  &kp LEFT_ARROW  &trans          &kp RIGHT_ARROW  &trans
-&kp LEFT_SHIFT  &kp LG(LS(LEFT_ARROW))  &trans          &kp LG(LS(RIGHT_ARROW))  &trans   &trans      &trans  &trans  &trans          &kp DOWN_ARROW  &trans           &trans
-&trans          &trans                  &trans          &trans                   &trans   &trans      &trans  &trans                                                   &trans
+&kp EXCLAMATION  &kp DOUBLE_QUOTES       &kp HASH        &kp DOLLAR               &kp PERCENT                      &kp AMPERSAND  &kp SQT         &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp EQUAL
+&kp HOME         &kp LEFT_ARROW          &kp DOWN_ARROW  &kp RIGHT_ARROW          &kp END      &trans      &trans  &trans         &kp LEFT_ARROW  &kp UP_ARROW          &kp RIGHT_ARROW        &kp AT_SIGN
+&kp LEFT_SHIFT   &kp LG(LS(LEFT_ARROW))  &kp DOWN_ARROW  &kp LG(LS(RIGHT_ARROW))  &trans       &trans      &trans  &trans         &trans          &kp DOWN_ARROW        &trans                 &trans
+&trans           &trans                  &trans          &trans                   &trans       &trans      &trans  &trans                                                                      &trans
             >;
 
             sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
