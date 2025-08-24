@@ -163,6 +163,8 @@
 &kp LEFT_SHIFT   &kp LG(LS(LEFT_ARROW))  &kp DOWN_ARROW  &kp LG(LS(RIGHT_ARROW))  &trans       &trans      &trans  &trans         &trans          &kp DOWN_ARROW        &trans                 &trans
 &trans           &trans                  &trans          &trans                   &trans       &trans      &trans  &trans                                                                      &trans
             >;
+
+            sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
         };
 
         MOUSE {
