@@ -106,6 +106,21 @@
             bindings = <&sl 3>;
             key-positions = <26 25>;
         };
+
+        zoom {
+            bindings = <&kp LC(PLUS)>;
+            key-positions = <17 18 19>;
+        };
+
+        minus {
+            bindings = <&kp LC(MINUS)>;
+            key-positions = <29 30 31>;
+        };
+
+        buletooth {
+            bindings = <&sl 6>;
+            key-positions = <0 1 2 3 4>;
+        };
     };
 
     behaviors {
