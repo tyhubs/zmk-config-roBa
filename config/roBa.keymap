@@ -232,7 +232,7 @@
 &trans                      &trans           &trans           &trans           &trans        &trans                       &trans          &trans                                                  &kp PIPE
             >;
 
-            sensor-bindings = <&encoder_msc_down_up>;
+            sensor-bindings = <&encoder_msc_left_right>;
         };
 
         ARROW {
@@ -243,7 +243,7 @@
 &trans           &trans                  &trans          &trans                   &trans       &trans      &trans  &trans                                                             &kp JP_UNDERSCORE
             >;
 
-            sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
+            sensor-bindings = <&encoder_msc_left_right>;
         };
 
         kigou {
@@ -253,7 +253,7 @@
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans         &trans        &kp JP_RBRACE
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                       &kp JP_UNDERSCORE
             >;
-            sensor-bindings = <&encoder_msc_down_up>;
+            sensor-bindings = <&encoder_msc_left_right>;
         };
 
         fun {
@@ -263,7 +263,7 @@
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &kp F1  &kp F2  &kp F3  &kp F12
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &kp JP_UNDERSCORE
             >;
-            sensor-bindings = <&encoder_msc_down_up>;
+            sensor-bindings = <&encoder_msc_left_right>;
         };
 
         layer_6 {
@@ -273,7 +273,7 @@
 &trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans  &trans      &bt BT_CLR      &bt BT_DISC 0  &bt BT_DISC 1  &bt BT_DISC 3  &bt BT_DISC 3  &bt BT_DISC 4
 &trans  &trans        &trans        &trans        &trans  &trans      &trans          &trans                                                      &bt BT_CLR_ALL
             >;
-            sensor-bindings = <&encoder_msc_down_up>;
+            sensor-bindings = <&encoder_msc_left_right>;
         };
     };
 };
