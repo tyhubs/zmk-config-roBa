@@ -251,7 +251,6 @@
 &kp LEFT_SHIFT   &kp LG(LS(LEFT_ARROW))  &kp DOWN_ARROW  &kp LG(LS(RIGHT_ARROW))  &trans       &trans      &trans  &trans            &kp SEMI      &kp JP_LBRACE    &kp JP_RBRACE    &trans
 &trans           &trans                  &trans          &trans                   &trans       &trans      &trans  &trans                                                            &kp JP_UNDERSCORE
             >;
-
             sensor-bindings = <&encoder_msc_left_right>;
         };
 
